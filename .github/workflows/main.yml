@@ -48,4 +48,4 @@ jobs:
           password: ${{ secrets.ec2 }}
       - name: Docker run
         run: |
-           docker-compose up -d
+           docker-compose -f docker-compose.yml up

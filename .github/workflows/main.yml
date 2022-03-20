@@ -40,5 +40,4 @@ jobs:
       #     push: true
       #     tags: ${{ env.DOCKER_IMAGE }}:latest
       - name: Build the stack
-        uses: actions/checkout@v2 
         run: docker-compose up -d

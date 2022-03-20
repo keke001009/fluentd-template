@@ -46,4 +46,6 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.ec2 }}
-      - name: docker-compose up -d
+      - name: Docker run
+        run: |
+           docker-compose up -d
